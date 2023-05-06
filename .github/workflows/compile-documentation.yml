@@ -18,7 +18,7 @@ jobs:
               uses: xu-cheng/latex-action@v2
               with:
                 root_file: ${{ env.LATEX_ROOT }}.tex
-                args: -pdf -file-line-error -halt-on-herror -interaction=nonstopmode -shell-escape
+                args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -shell-escape
 
             - name: Get Version
               id: get-version
